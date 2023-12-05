@@ -35,8 +35,6 @@ def Part2():
             else: textToNum(line, offset, numList)
             offset += 1
         numList += ["break"]
-        print(line)
-        print(numList[-8:])
     return combineAndSumNumsPart2(numList)
 
 def textToNum(line, offset, numList):
@@ -73,8 +71,6 @@ def combineAndSumNumsPart2(numList):
             continue
         if firstNum == -1: firstNum = element
         else : lastNum = element
-    print(doubleDigitNums)
-
     return sum(doubleDigitNums)
 
 print(f"Part 1: {Part1()}, Part 2: {Part2()}")
