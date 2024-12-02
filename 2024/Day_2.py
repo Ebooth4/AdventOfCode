@@ -3,8 +3,7 @@ from aocd import get_data, submit
 session_id = ""
 
 data = get_data(session=session_id, day=2, year=2024).splitlines()
-# file = open("data.txt")
-# data= file.read().splitlines()
+
 def Part1():
     # numbers = []
     
