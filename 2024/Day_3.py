@@ -1,7 +1,7 @@
 from aocd import get_data, submit
 import re
 
-session_id = "53616c7465645f5f6bfb145c34ba6da6e83b6bdff57e16a58c51162017789dc8894da75aefa5d050c9f8f3642364df1e5e6acd719107a90d70e686cac7317033"
+session_id = ""
 
 data = get_data(session=session_id, day=3, year=2024)
 data = "do()" + str(data) + "don't()"
