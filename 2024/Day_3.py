@@ -16,8 +16,7 @@ def Part1(data = data):
     return sum
 
 def Part2():
-    do_and_donts = re.findall(r"do\(\).*?don't\(\)", ("".join(data)).strip("\n"), flags=re.DOTALL)
-    return Part1("".join(do_and_donts))
+    return Part1("".join(re.findall(r"do\(\).*?don't\(\)", ("".join(data)).strip("\n"), flags=re.DOTALL)))
 
 print(f"Part 1: {Part1()}, Part 2: {Part2()}")
 # submit(Part1(), session=session_id, day=3, year=2024)
