@@ -1,6 +1,9 @@
+import sys
+sys.path.append("../")
+from Session import getSessionId
 from aocd import get_data, submit
 
-session_id = ""
+session_id = getSessionId()
 
 data = get_data(session=session_id, day=1, year=2023).splitlines()
 
