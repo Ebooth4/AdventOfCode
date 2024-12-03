@@ -1,7 +1,10 @@
 from aocd import get_data, submit
 import re
+import sys
+sys.path.append("../")
+from Session import getSessionId
 
-session_id = ""
+session_id = getSessionId()
 
 data = get_data(session=session_id, day=3, year=2024)
 data = "do()" + data + "don't()"
